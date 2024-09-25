@@ -1,0 +1,382 @@
+/* styling the header section */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: helvetica, arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Header container */
+.header-container {
+  display: flex;
+  height: 13vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: #27272a;
+}
+
+/* Left section of header */
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-left: 96px;
+}
+
+/* Logo */
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+/* Navigation list */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  color: rgb(194, 203, 200);
+}
+
+.nav-list button:hover {
+  color: white;
+}
+
+.nav-list button {
+  background: none;
+  border: none;
+  color: rgb(194, 203, 200);
+  cursor: pointer;
+  font-size: small;
+}
+
+.nav-list h5 {
+  margin: 0;
+}
+
+/* Right section of header */
+.header-right {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  padding-right: 96px;
+}
+
+/* Dealer search items */
+.dealer-search {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  color: rgb(194, 203, 200);
+  font-size: small;
+}
+
+.dealer-search button {
+  background: none;
+  border: none;
+  color: rgb(194, 203, 200);
+  cursor: pointer;
+}
+
+.zip-code {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.zip-code pre {
+  margin: 0;
+}
+
+.material-symbols-outlined {
+  position: relative;
+  top: 2px;
+  right: 8px;
+}
+
+.material-symbols-outlined:hover {
+  color: white;
+}
+
+/* styling slideshow section */
+
+.slideshow {
+  overflow: hidden;
+  height: 78vh;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+}
+
+.image-container {
+  overflow-x: scroll;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.slideshow .image-container img {
+  height: 100%;
+  width: 100%;
+}
+
+/* styling main-content section */
+.main-content {
+  display: flex;
+  background-color: white;
+  height: 130vh;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.main-content-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+  padding-block: 50px;
+}
+
+.main-content-1 video {
+  border: none;
+  height: 330px;
+}
+.main-content-1 h1,
+button {
+  text-transform: uppercase;
+}
+
+.main-content-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+  padding-block: 50px;
+}
+
+.main-content-2 img {
+  height: 330px;
+}
+
+div.text-1 {
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+div.text-2 {
+  width: 70%;
+  margin-top: 50px;
+}
+
+.main-content h1 {
+  letter-spacing: 2px;
+  color: rgb(5, 18, 24);
+}
+
+.main-content p {
+  line-height: 30px;
+}
+
+.main-content button {
+  padding-block: 20px;
+  background-color: white;
+  border: none;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+  color: rgb(102, 100, 101);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* styling icons section*/
+
+.icons-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+  height: 65vh;
+  width: 100%;
+  gap: 30px;
+}
+
+.icons-section h5{
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 3px;
+}
+
+.icons-section p{
+  font-size: small;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+}
+
+.icon-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 20%;
+  gap: 15px;
+}
+
+.icon-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 20%;
+  margin-bottom: 48px;
+  gap: 15px;
+}
+
+/* styling cars section */
+
+.cars-section {
+  background-color: white;
+  height: 130vh;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* styling footer section */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(39, 39, 41);
+  height: 110vh;
+  margin-bottom: 28px;
+}
+
+.footer-section {
+  padding-top: 30px;
+  color: white; 
+  height: 100%;
+  width: 88%;
+}
+
+.subscribe-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.subscribe-section .icon {
+  font-family: 'Material Symbols Outlined';
+  color: rgb(153, 154, 154);
+  font-size: 20px;
+  position: relative;
+  top: 6px;
+}
+
+.subscribe-section a {
+  text-decoration: none;
+}
+
+.subscribe-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(153, 154, 154);
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: start;
+  height: 60%;
+  gap: 6%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column h5 {
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+
+.column ul li {
+  margin-bottom: 5px;
+}
+
+.column ul li a {
+  text-decoration: none;
+  color: rgb(153, 154, 154);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.column ul li a:hover {
+  color: white;
+}
+
+.legal-section {
+  display: flex;
+  text-align: center;
+  margin-top: 3.5%; 
+  position: relative;
+  right: 6px;
+}
+
+.legal-section a, span {
+  color: rgb(153, 154, 154);
+  text-decoration: none;
+  font-size: 10px;
+  padding: 0 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.legal-section a:hover {
+  color: white;
+}
+
+.copyright {
+  margin-top: 4%;
+  text-align: end;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgb(153, 154, 154);
+}
+
+footer hr {
+  border-top: 1px solid rgb(153, 154, 154);;
+  margin: 20px 0;
+}
