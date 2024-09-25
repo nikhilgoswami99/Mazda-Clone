@@ -7,6 +7,10 @@
   font-family: helvetica, arial, sans-serif;
 }
 
+img, button {
+  cursor: pointer;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -18,7 +22,6 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
   background-color: #27272a;
 }
 
@@ -57,6 +60,7 @@ body {
   color: rgb(194, 203, 200);
   cursor: pointer;
   font-size: small;
+  letter-spacing: 2px;
 }
 
 .nav-list h5 {
@@ -75,33 +79,49 @@ body {
 .dealer-search {
   list-style: none;
   display: flex;
-  gap: 28px;
+  gap: 15px;
   align-items: center;
-  color: rgb(194, 203, 200);
-  font-size: small;
 }
 
 .dealer-search button {
   background: none;
   border: none;
-  color: rgb(194, 203, 200);
+  color: rgb(148, 148, 141);
   cursor: pointer;
+  font-size: 10px;
+  letter-spacing: 2px;
 }
 
 .zip-code {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
 }
 
 .zip-code pre {
-  margin: 0;
+  font-size: 10px;
+  color: rgb(148, 148, 141);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.zip-code .material-symbols-outlined {
+  color: rgb(148, 148, 141);
 }
 
 .material-symbols-outlined {
   position: relative;
   top: 2px;
   right: 8px;
+}
+
+.dealer-search button:hover {
+  color: white;
+}
+
+.dealer-search a,
+pre:hover {
+  color: white;
 }
 
 .material-symbols-outlined:hover {
@@ -216,13 +236,13 @@ div.text-2 {
   gap: 30px;
 }
 
-.icons-section h5{
+.icons-section h5 {
   text-transform: uppercase;
   line-height: 20px;
   letter-spacing: 3px;
 }
 
-.icons-section p{
+.icons-section p {
   font-size: small;
   line-height: 20px;
   letter-spacing: 1.5px;
@@ -250,19 +270,89 @@ div.text-2 {
 /* styling cars section */
 
 .cars-section {
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  height: 130vh;
+  height: 145vh;
   width: 100%;
+  gap: 50px;
 }
 
+.cars {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  height: 60%;
+  width: 100%;
+  margin-top: 40px;
+}
 
+.cars img {
+  height: 430px;
+  width: 430px;
+  margin-bottom: 8%;
+}
 
+.cars .car-1,
+.car-2,
+.car-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.cars p {
+  font-size: medium;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
 
+.cars button {
+  background-color: black;
+  color: white;
+  width: 170px;
+  height: 45px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
 
+.cars button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
+.cars-sub-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  width: 100%;
+  gap: 45px;
+}
 
+.sub-divs img {
+  object-fit: contain;
+  height: 30%;
+}
 
+.sub-divs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+  height: 55%;
+  width: 20%;
+  gap: 10px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.sub-divs:hover {
+  background-color: black;
+  color: white;
+}
 
 /* styling footer section */
 
@@ -277,7 +367,7 @@ footer {
 
 .footer-section {
   padding-top: 30px;
-  color: white; 
+  color: white;
   height: 100%;
   width: 88%;
 }
@@ -289,7 +379,7 @@ footer {
 }
 
 .subscribe-section .icon {
-  font-family: 'Material Symbols Outlined';
+  font-family: "Material Symbols Outlined";
   color: rgb(153, 154, 154);
   font-size: 20px;
   position: relative;
@@ -350,12 +440,13 @@ footer {
 .legal-section {
   display: flex;
   text-align: center;
-  margin-top: 3.5%; 
+  margin-top: 3.5%;
   position: relative;
   right: 6px;
 }
 
-.legal-section a, span {
+.legal-section a,
+span {
   color: rgb(153, 154, 154);
   text-decoration: none;
   font-size: 10px;
@@ -377,6 +468,6 @@ footer {
 }
 
 footer hr {
-  border-top: 1px solid rgb(153, 154, 154);;
+  border-top: 1px solid rgb(153, 154, 154);
   margin: 20px 0;
 }
