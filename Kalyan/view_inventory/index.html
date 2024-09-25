@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="summary">
+          <span class="dealer_count">SEARCHING 1 DEALER</span>
+          <span class="vehicle_count">0 VEHICLES FOUND</span>
+          <span class="zip">Near <u>96799</u></span>
+        </div>
+        <div class="inventory_types">
+          <span class="new_vehicles">NEW VEHICLES</span>
+          <span class="separator">|</span>
+          <span class="preowned">CERTIFIED PRE-OWNED</span>
+        </div>
+      </div>
+    </header>
+    <!--Main section is starting-->
+    <div class="main">
+      <div class="sidebar">
+        <hr />
+        <!--1st sidebar section-->
+        <div class="sidebar_dealer">
+          <div class="dealer">
+            Dealer Inventories
+            <span class="material-symbols-outlined"> remove </span>
+          </div>
+
+          <div class="zip_map">
+            <span>ZIP CODE</span><span id="map">MAP</span>
+          </div>
+          <hr />
+          <div class="option_zip">
+            <!-- <div class="options"> -->
+
+            <select name="miles" id="miles">
+              <option value="50 MILES">50 MILES</option>
+              <option value="100 MILES">100 MILES</option>
+              <option value="150 MILES">150 MILES</option>
+              <option value="200 MILES">200 MILES</option>
+            </select>
+
+            <div class="zip_search">
+              <input
+                type="text"
+                placeholder="ZIP CODE"
+                name="zip"
+                maxlength="5"
+                pattern="\d{5}"
+                size="6"
+              />
+              <span class="material-symbols-outlined"> search </span>
+            </div>
+          </div>
+
+          <br />
+          <div class="filters">
+            FILTER BY SERVICES
+            <span class="material-symbols-outlined"> keyboard_arrow_down </span>
+          </div>
+          <p>We couldn't find any MAZDA Dealers near you.</p>
+          <p><b>Search Suggestions</b></p>
+          <p>
+            Adjust your search filters. <br />
+            Try changing selected accolades.<br />
+            Try a differrent Zip Code or search radius.
+          </p>
+        </div>
+        <hr />
+
+        <div class="sidebar_model">
+          <div class="model">
+            MODEL
+            <span class="material-symbols-outlined"> remove </span>
+          </div>
+          <div class="filters">Select Model(s)</div>
+          <hr />
+        </div>
+        <div class="sidebar_model">
+          <div class="sidebar_model">
+            <div class="model">
+              VEHICLE STATUS
+              <span class="material-symbols-outlined"> add </span>
+            </div>
+            <div class="filters">All</div>
+            <hr />
+          </div>
+          <div class="sidebar_model">
+            <div class="model">
+              COLOR
+              <span class="material-symbols-outlined"> add </span>
+            </div>
+            <div class="filters">All</div>
+            <hr />
+          </div>
+          <div class="sidebar_model">
+            <div class="model">
+              PRICE
+              <span class="material-symbols-outlined"> add </span>
+            </div>
+            <div class="filters">All</div>
+            <hr />
+          </div>
+          <div class="sidebar_model">
+            <div class="model">
+              POWERTRAIN
+              <span class="material-symbols-outlined"> add </span>
+            </div>
+            <div class="filters">All</div>
+            <hr />
+          </div>
+        </div>
+        <div class="model">
+          YEAR
+          <span class="material-symbols-outlined"> add </span>
+        </div>
+        <div class="filters">All</div>
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>
