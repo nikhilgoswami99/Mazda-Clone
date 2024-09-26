@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 80%;
+}
+
+#section-1 {
+    border-right: 1px solid #ccc;
+}
+
+#section-2 {
+    border-right: 1px solid #ccc;
+}
+
+#section-3 {
+    padding: 0;
+} 
+.divs {
+    text-align: start;
+    width: 60%;
+}
+
+.div-last p {
+    width: 90%;
+}
+
+.div-last {
+    margin-left: 30px;
+    margin-bottom: 25px;
+    width: 90%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    gap: 30px;
+}
+
+.section h4, ul, p {
+    text-align: start;
+    width: 60%;
+}
+
+h4 {
+    letter-spacing: 1px;
+    color: rgb(115, 115, 115);
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(135, 135, 135);
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#owners-img-3 {
+    width: 100%;
+}
+
+p {
+    font-size: 14px;
+    color: rgb(115, 115, 115);
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+a.cta {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    color: rgb(115, 115, 115);
+    letter-spacing: 2px;
+    text-align: start;
+}
+
+#register {
+    color: rgb(115, 115, 115);
+    background-color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    letter-spacing: 2px;
+}
+
+a.btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    padding: 10px 35px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+    text-transform: uppercase;
+}
