@@ -40,6 +40,10 @@ body {
   height: 48px;
 }
 
+#search-icon {
+  font-size: medium;
+}
+
 /* Navigation list */
 .nav-list {
   list-style: none;
@@ -133,22 +137,35 @@ pre:hover {
 .slideshow {
   overflow: hidden;
   height: 78vh;
-  width: 100vw;
+  background-color: rgb(39, 39, 41);
   position: sticky;
   top: 0;
   z-index: -1;
 }
 
 .image-container {
-  overflow-x: scroll;
-  display: flex;
-  height: 100%;
-  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  height: 78vh; 
+  column-gap: 20px;
+}
+
+@keyframes autoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-345vw);
+  }
 }
 
 .slideshow .image-container img {
-  height: 100%;
-  width: 100%;
+  height: 70%;
+  width: 1200px; 
+  border-radius: 20px;
+  animation: autoScroll 50s linear infinite;
 }
 
 /* styling main-content section */
@@ -224,6 +241,8 @@ div.text-2 {
   letter-spacing: 2px;
 }
 
+
+
 /* styling icons section*/
 
 .icons-section {
@@ -236,10 +255,20 @@ div.text-2 {
   gap: 30px;
 }
 
+.icons-section img {
+  transform: scale(1);
+  transition: transform 1s ease-in;
+}
+
+.icons-section img:hover {
+  transform: scale(1.2);
+}
+
 .icons-section h5 {
   text-transform: uppercase;
   line-height: 20px;
   letter-spacing: 3px;
+  padding-bottom: 5px;
 }
 
 .icons-section p {
@@ -350,8 +379,8 @@ div.text-2 {
 }
 
 .sub-divs:hover {
-  background-color: black;
-  color: white;
+  filter: invert(100%);
+  font-weight: 700;
 }
 
 /* styling footer section */
@@ -361,8 +390,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: rgb(39, 39, 41);
-  height: 110vh;
-  margin-bottom: 28px;
+  height: 100vh;
 }
 
 .footer-section {
@@ -376,12 +404,20 @@ footer {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
-.subscribe-section .icon {
-  font-family: "Material Symbols Outlined";
+.subscribe-section span:hover {
+  color: white;
+}
+
+.subscribe-section #icon:hover {
+  color: white;
+}
+
+.subscribe-section #icon {
   color: rgb(153, 154, 154);
-  font-size: 20px;
+  font-size: 25px;
   position: relative;
   top: 6px;
 }
@@ -399,10 +435,44 @@ footer {
 }
 
 .footer-columns {
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
   display: flex;
   justify-content: start;
-  height: 60%;
+  height: 68%;
   gap: 6%;
+  padding: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  height: 5%;
+  color: rgb(154, 153, 152);
+  font-size: 25px;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.social-icons i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.social-icons i {
+  margin-right: 15px;
+}
+
+#globe {
+  border-radius: 5px;
+}
+.social-icons span {
+  color: rgb(153, 154, 154);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#icon-text span:hover {
+  color: white;
 }
 
 .column {
@@ -438,9 +508,10 @@ footer {
 }
 
 .legal-section {
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
   display: flex;
   text-align: center;
-  margin-top: 3.5%;
+  padding-top: 3%;
   position: relative;
   right: 6px;
 }
@@ -460,14 +531,10 @@ span {
 }
 
 .copyright {
-  margin-top: 4%;
+  margin-top: 3%;
   text-align: end;
   font-size: 10px;
   letter-spacing: 2px;
   color: rgb(153, 154, 154);
 }
 
-footer hr {
-  border-top: 1px solid rgb(153, 154, 154);
-  margin: 20px 0;
-}

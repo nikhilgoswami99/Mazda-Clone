@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
   </head>
   <body>
@@ -36,12 +36,12 @@
                 <a href="#"><button>WHAT DRIVES US</button></a>
               </li>
               <li>
-                <a href="#"><button>OWNERS</button></a>
+                <a target="_self" href="../owners/index.html"><button>OWNERS</button></a>
               </li>
               <li>
                 <a href="#"
                   ><button>
-                    <span class="material-symbols-outlined"> search </span>
+                    <i id="search-icon" class="fa-solid fa-magnifying-glass fa-shake"></i>
                   </button></a
                 >
               </li>
@@ -61,7 +61,7 @@
               <pre>96799</pre>
               <a href="#"
                 ><button>
-                  <span class="material-symbols-outlined"> location_on </span>
+                  <i class="fa-solid fa-location-dot fa-beat"></i>
                 </button></a
               >
             </li>
@@ -162,28 +162,28 @@
         <div class="cars-sub-section">
           <div class="sub-divs">
             <img
-              src="https://www.mazdausa.com/siteassets/vehicles/shopping-icons/test/mazda-build-and-price"
+              src="./assets/mazda-build-and-price.png"
               alt=""
             />
             <p>BUILD & PRICE</p>
           </div>
           <div class="sub-divs">
             <img
-              src="https://www.mazdausa.com/siteassets/vehicles/shopping-icons/test/mazda-special-offers"
+              src="./assets/mazda-special-offers.png"
               alt=""
             />
             <p>SPECIAL OFFERS</p>
           </div>
           <div class="sub-divs">
             <img
-              src="https://www.mazdausa.com/siteassets/vehicles/shopping-icons/test/find-a-mazda-dealer"
+              src="./assets/find-a-mazda-dealer.png"
               alt=""
             />
             <p>FIND A DEALER</p>
           </div>
           <div class="sub-divs">
             <img
-              src="https://www.mazdausa.com/siteassets/vehicles/shopping-icons/test/mazda-schedule-a-drive"
+              src="./assets/mazda-schedule-a-drive.png"
               alt=""
             />
             <p>SCHEDULE A DRIVE</p>
@@ -196,11 +196,10 @@
       <section class="footer-section">
         <div class="subscribe-section">
           <a href="#">
-            <span class="icon" class="material-symbols-outlined"> mail </span>
+            <i id="icon" class="fa-solid fa-envelope fa-flip"></i>
             <span class="subscribe-text">SUBSCRIBE TO UPDATES</span>
           </a>
         </div>
-        <hr />
         <div class="footer-columns">
           <div class="column">
             <h5>Shopping Tools</h5>
@@ -250,12 +249,22 @@
               <li><a href="#">DEALER DIRECTORY</a></li>
             </ul>
           </div>
-          <div class="social-icons">
-            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        <div class="social-icons">
+          <div>
+          <i class="fa-brands fa-facebook-f fa-bounce"></i>
+          <i class="fa-brands fa-youtube fa-bounce"></i>
+          <i class="fa-brands fa-x-twitter fa-bounce"></i>
+          <i class="fa-brands fa-square-instagram fa-bounce"></i>
+          <i class="fa-brands fa-threads fa-bounce"></i>
+          </div>
+          <div id="icon-text">
+            <i class="fa-solid fa-universal-access fa-bounce"
+              ></i
+            ><span>ACCESSIBILITY</span>
+            <i class="fa-solid fa-globe fa-bounce"></i><span>ENGLISH</span>
           </div>
         </div>
-
-        <hr />
 
         <div class="legal-section">
           <a href="#">Terms and Conditions</a>
