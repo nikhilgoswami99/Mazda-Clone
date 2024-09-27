@@ -10,6 +10,11 @@ module.exports = {
         customGray: '#f5f5f5',
       },
 
+      colors: {
+        customGGray: '#2b2b2b',
+      },
+
+
 
     },
   },

@@ -12,9 +12,70 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <title>2025 CX MAZDA CX-30 - CROSSOVER SUV | MAZDA USA</title>
   </head>
   <body>
+
+    <header>
+      <div class="flex justify-between items-center h-[11vh] w-full bg-customGray text-white">
+        <!-- Left section -->
+        <div class="flex items-center gap-10 pl-24">
+          <div>
+            <a href="#">
+              <img
+                class="w-12 h-12"
+                src="https://www.mazdausa.com/siteassets/images/home/4218-update/mazda-usa-logo"
+                alt="Mazda Logo"
+              />
+            </a>
+          </div>
+    
+          <nav>
+            <ul class="flex items-center gap-10 text-neutral-400">
+              <li>
+                <a href="#"><button class="hover:text-white">VEHICLES</button></a>
+              </li>
+              <li>
+                <a href="#"><button class="hover:text-white">SHOPPING TOOLS</button></a>
+              </li>
+              <li>
+                <a href="#"><button class="hover:text-white">WHAT DRIVES US</button></a>
+              </li>
+              <li>
+                <a href="../owners/index.html" target="_self"><button class="hover:text-white">OWNERS</button></a>
+              </li>
+              <li>
+                <a href="#"><button class="hover:text-white"><i id="search-icon" class="fa-solid fa-magnifying-glass fa-shake"></i></button></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    
+        <!-- Right section -->
+        <div class="flex items-center gap-7 pr-24">
+          <ul class="flex items-center gap-4">
+            <li>
+              <a href="#"><button class="text-xs text-neutral-500 hover:text-white">FIND A DEALER</button></a>
+            </li>
+            <li>
+              <a href="#"><button class="text-xs text-neutral-500 hover:text-white">|</button></a>
+            </li>
+            <li class="flex items-center gap-1">
+              <pre class="text-xs text-neutral-500 hover:text-white">96799</pre>
+              <a href="#"><button><i class="fa-solid fa-location-dot fa-beat text-neutral-500 hover:text-white"></i></button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+
+
+
+
     <nav class="flex sticky items-center justify-between pt-5 pb-5 top-0 bg-white z-10">
       <div class="pl-36">
         <h1 class="text-lg font-normal leading-3 align-center tracking-widest">
@@ -65,10 +126,7 @@
           <div class="h-9 w-0.5 bg-white"></div>
           <button class="bg-black hover:bg-neutral-500 rounded-r-sm w-14 h-9">
             <a href="">
-              <!-- <span class="material-symbols-outlined bg-white">
-                    arrow_drop_down
-                    </span> -->
-            </a>
+              <i class="fa-solid fa-caret-down fa-flip" style="color: #ffffff;"></i>
           </button>
         </div>
       </div>
@@ -148,7 +206,7 @@
       <div
         class="flex-col  absolute z-0 top-32 left-44 bottom-0"
       >
-        <div class="flex-col pb-36">
+        <div class="flex-col pb-36 pt-20">
           <p
             class="text-sm font-medium leading-3 align-middle tracking-widest w-full text-white"
           >
@@ -193,12 +251,12 @@
     <section class="sticky top-0 z-20">
       <div class="bg-gray-100 w-full pt-5 pb-5 ">
         <ul class="flex items-center gap-6 pl-44">
-          <li><a href="" class="hover:underline">DESIGN</a></li>
-          <li><a href="" class="hover:underline">PERFORMANCE</a></li>
-          <li><a href="" class="hover:underline">TRIM SELECTOR</a></li>
-          <li><a href="" class="hover:underline">TECHNOLOGY</a></li>
-          <li><a href="" class="hover:underline">SAFETY</a></li>
-          <li><a href="" class="hover:underline">FAQS</a></li>
+          <li><a href="#design" class="hover:underline">DESIGN</a></li>
+          <li><a href="#performance" class="hover:underline">PERFORMANCE</a></li>
+          <li><a href="#trim" class="hover:underline">TRIM SELECTOR</a></li>
+          <li><a href="#technology" class="hover:underline">TECHNOLOGY</a></li>
+          <li><a href="#safty" class="hover:underline">SAFETY</a></li>
+          <li><a href="#faqs" class="hover:underline">FAQS</a></li>
         </ul>
       </div>
     </section>
@@ -265,8 +323,8 @@
       </div>
     </section>
 
-    <section
-      class="border-emerald-900 w-full  h-52 pl-44 items-center flex"
+    <section id="design"
+      class=" w-full  h-52 pl-44 items-center flex"
     >
       <div class="">
         <h6
@@ -307,12 +365,12 @@
         />
 
         <button
-          class="bg-black rounded-r-sm w-10 h-9 absolute left-0 top-1/2 transform -translate-y-1/2 ml-4 z-50 ml-44"
-        ></button>
+          class="bg-black rounded-r-sm w-10 h-9 absolute left-0 top-1/2 transform -translate-y-1/2  z-50 ml-44"
+        > <i class="fa-solid fa-arrow-left fa-beat" style="color: #ffffff;"></i></button>
 
         <button
-          class="bg-black rounded-l-sm w-10 h-9 absolute right-0 top-1/2 transform -translate-y-1/2 mr-4 z-50 mr-44"
-        ></button>
+          class="bg-black rounded-l-sm w-10 h-9 absolute right-0 top-1/2 transform -translate-y-1/2  z-50 mr-44"
+        > <i class="fa-solid fa-arrow-right fa-beat" style="color: #ffffff;"></i></button>
       </div>
     </section>
 
@@ -423,7 +481,7 @@
 
     <hr class="pb-24" />
 
-    <section class="pt-10">
+    <section class="pt-10" id="performance">
       <div class="pt-10">
         <div class="pl-44">
           <h6
@@ -517,7 +575,7 @@
 
     <hr />
 
-    <section class="pt-32 pb-12">
+    <section class="pt-32 pb-12" id="trim">
       <div class="pl-44">
         <h6
           class="text-sm font-semibold leading-3 align-bottom tracking-widest"
@@ -711,7 +769,7 @@
 
     <hr class="pb-32" />
 
-    <section class="pb-20">
+    <section class="pb-20" id="technology">
       <div class="pl-44">
         <h6
           class="text-sm font-semibold leading-3 align-bottom tracking-widest"
@@ -812,7 +870,7 @@
 
     <hr class="pt-14" />
 
-    <section class="pb-24">
+    <section class="pb-24" id="safty">
       <div class="pl-44">
         <h6
           class="text-sm font-semibold leading-3 align-bottom tracking-widest"
@@ -940,7 +998,7 @@
       <hr class="mt-52" />
     </div>
 
-    <section class="">
+    <section class="" id="faqs">
       <div>
         <p
           class="text-xs font-bold text-center items-center flex pl-44 pr-44 justify-start pt-9 pb-3"
@@ -1191,5 +1249,116 @@
 
     </section>
    
+
+
+    <footer class="flex items-center justify-center bg-customGray text-white h-screen">
+      <section class="pt-14 text-white h-full w-11/12 mr-44 ml-44">
+        
+        <!-- Subscribe Section -->
+        <div class="flex items-center mb-8 cursor-pointer">
+          <a href="#" class="flex items-center space-x-2">
+            <i class="fa-solid fa-envelope fa-flip text-neutral-500  text-xl"></i>
+            <span class="text-xs font-bold tracking-wider text-neutral-500 hover:text-white">SUBSCRIBE TO UPDATES</span>
+          </a>
+        </div>
+        
+        <!-- Footer Columns -->
+        <div class="border-t border-gray-600 flex justify-start h-1/2 gap-20 py-4 pt-10">
+          
+          <!-- Column 1: Shopping Tools -->
+          <div class="flex flex-col gap-3 ">
+            <h5 class="text-slate-200">Shopping Tools</h5>
+            <ul class="space-y-1 text-xs uppercase tracking-wider flex flex-col gap-3">
+              <li><a href="#" class="text-neutral-500  hover:text-white">BUILD AND PRICE</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">INVENTORY SEARCH</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">CERTIFIED PRE-OWNED</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">REQUEST A QUOTE</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">SPECIAL OFFERS</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">Payment Estimator</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">APPLY FOR FINANCING</a></li>
+            </ul>
+          </div>
+    
+          <!-- Column 2: Other Mazda Sites -->
+          <div class="flex flex-col gap-3">
+            <h5 class="text-slate-200">Other Mazda Sites</h5>
+            <ul class="space-y-1 text-xs uppercase tracking-wider flex flex-col gap-3">
+              <li><a href="#" class="text-neutral-500 hover:text-white">MAZDA GLOBAL</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">Mazda Foundation</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">MOTORSPORTS</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">MAZDA RECALL INFO</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">Mazda Stories</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">MAZDA FINANCIAL SERVICES</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">MAZDA PROTECTION PRODUCTS</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">MAZDA COLLECTION</a></li>
+            </ul>
+          </div>
+    
+          <!-- Column 3: About -->
+          <div class="flex flex-col gap-3">
+            <h5 class="text-slate-200">About</h5>
+            <ul class="space-y-1 text-xs uppercase tracking-wider flex flex-col gap-3">
+              <li><a href="#" class="text-neutral-500 hover:text-white">MAZDA NEWS</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">CAREERS</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">MAZDA MOBILE APPS</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">ESG & SUSTAINABILITY</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">RESOURCE CENTER</a></li>
+            </ul>
+          </div>
+    
+          <!-- Column 4: Help -->
+          <div class="flex flex-col gap-3">
+            <h5 class="text-slate-200">Help</h5>
+            <ul class="space-y-1 text-xs uppercase tracking-wider flex flex-col gap-3">
+              <li><a href="#" class="text-neutral-500 hover:text-white">ACCESSIBILITY</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">SITEMAP</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">FAQ</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">CONTACT US</a></li>
+              <li><a href="#" class="text-neutral-500 hover:text-white">DEALER DIRECTORY</a></li>
+            </ul>
+          </div>
+    
+        </div>
+    
+        <!-- Social Icons -->
+        <div class="flex justify-between items-center text-neutral-500 text-xl py-2 pt-28">
+          <div class="space-x-4">
+            <i class="fa-brands fa-facebook-f fa-bounce hover:text-white"></i>
+            <i class="fa-brands fa-youtube fa-bounce hover:text-white"></i>
+            <i class="fa-brands fa-x-twitter fa-bounce hover:text-white"></i>
+            <i class="fa-brands fa-square-instagram fa-bounce hover:text-white"></i>
+            <i class="fa-brands fa-threads fa-bounce hover:text-white"></i>
+          </div>
+          <div class="flex space-x-4">
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-universal-access fa-bounce"></i>
+              <span class="text-xs font-bold tracking-wider text-neutral-500 hover:text-white">ACCESSIBILITY</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-globe fa-bounce"></i>
+              <span class="text-xs font-bold tracking-wider text-neutral-500 hover:text-white">ENGLISH</span>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Legal Section -->
+        <div class="border-t border-gray-600 text-center py-3 text-xs tracking-wider text-neutral-500">
+          <a href="#" class="hover:text-white">Terms and Conditions</a>
+          <span class="px-2">|</span>
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <span class="px-2">|</span>
+          <a href="#" class="hover:text-white">Manage Cookie Preferences</a>
+          <span class="px-2">|</span>
+          <a href="#" class="hover:text-white">Do not sell or share my personal information</a>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="text-right mt-3 text-xs tracking-wider text-neutral-500">
+          <p>©2024 MAZDA NORTH AMERICAN OPERATIONS. ALL RIGHTS RESERVED.</p>
+        </div>
+    
+      </section>
+    </footer>
+    
   </body>
 </html>
