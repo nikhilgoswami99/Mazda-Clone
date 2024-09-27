@@ -1,0 +1,546 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    color: #101010;
+    font-family: "Mazda Type", helvetica, arial, sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+
+
+
+}
+
+
+.nav_main {
+    background-color: #101010;
+    opacity: 0.9;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.kk1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+}
+
+.kk2 {
+    color: #101010;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 23px;
+    padding-left: 680px;
+
+}
+
+.kk2 h3 {
+    color: #101010;
+    opacity: 0.7;
+
+
+}
+
+.nav_main ul {
+    list-style-type: none;
+    display: flex;
+}
+
+
+.nav_main ul li {
+    display: flex;
+}
+
+
+.nav_main a {
+    text-decoration: none;
+    color: white;
+    padding: 0PX;
+    display: block;
+}
+
+
+.firstdiv {
+    opacity: 0.6;
+    font: 16px;
+    height: 630px;
+    width: 100%;
+    background-color: #101010;
+    color: white;
+  
+    background: radial-gradient(circle, #101010, rgb(201, 200, 200), #faf6f6);
+}
+
+.first_subdiv {
+    color: #101010;
+    font: 16px;
+    padding: 0px 12px 0px 12px;
+    position: absolute;
+    top: 50vh;
+    width: 100vw;
+}
+
+h4 {
+    color: white;
+    margin: 0px 0px 8px;
+    text-align: center;
+    font: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+.h4size {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 8.5px;
+}
+
+.second_subdiv p{
+    font-size: 15px;
+}
+
+
+.seconddiv {
+    background-color: #f5f5f5;
+    opacity: 0.9;
+    padding: 0px 20px 0px 20px;
+    margin: 90px 350px 90px 350px;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 30px;
+   
+}
+
+.second_subdiv {
+
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.seconddiv h2 {
+
+    font-size: 14px;
+    margin: 0px 0px 25px;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 4px;
+    opacity: 0.9;
+    
+}
+
+
+
+
+
+.thirddiv {
+    display: flex;
+}
+.sub {
+    text-align: left;
+    justify-items: left;
+    margin: 152px 151px 5px 80px;
+    
+
+}
+.thirdsub img{
+    padding-left: 33px;
+}
+
+
+.thirddiv h1{
+    color: #101010;
+    opacity: 0.9;
+    font-size: 20px;
+    margin-bottom: 28px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    line-height: 1.4;
+}
+.thirddiv h3{
+    font-size: 13px;
+    margin-bottom: 30px;
+    text-align: left; 
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    opacity: 0.8;
+}
+.thirddiv p{
+    font-size: 16px;
+    line-height: 1.65;
+    text-align: left;
+    justify-content: left;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+}
+
+.fourth h1{
+    font-size: 20px;
+}
+.fourth h4{
+    font-size: 13px;
+}
+.fourth p{
+    font-size: 16px;
+}
+
+.sub4{
+    top: 0;
+    left: 0;
+    margin-left: 240px;
+    width: 325px;
+    color: white;
+    padding: 10px;
+    text-align: left; 
+    font-size: 20px;
+    
+}
+
+.overlay-text {
+position: absolute;
+top: 48%; 
+left: 110px; 
+transform: translate(-50%, -50%); 
+color: white; 
+text-align: left; 
+
+
+}
+.fifth{
+    display: flex;
+}
+.fifth img{
+    display: flex;
+    left: 50%;
+    float: right; 
+    margin:0px 120px 0px  0px; 
+}
+#star {
+top: 300px;
+    margin: 0px 151px 5px 80px;
+    
+
+}
+/* .overlay-text2{
+    position: absolute;
+    width: 335px;
+    top: 12px;
+    right: 100px; 
+    transform: translate(260%, -160%); 
+    color: white; 
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    border-radius: 5px; 
+} */
+
+.sixth{
+    display: flex;
+}
+
+/* .sixth {
+    top: 0;
+    left: 0;
+    margin-left: 240px;
+    width: 325px;
+    color: white;
+    padding: 10px;
+    text-align: left; 
+    font-size: 20px;
+    
+} */
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 39, 41);
+    height: 100vh;
+  }
+  
+  .footer-section {
+    padding-top: 30px;
+    color: white;
+    height: 100%;
+    width: 88%;
+  }
+  
+  .subscribe-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .subscribe-section span:hover {
+    color: white;
+  }
+  
+  .subscribe-section #icon:hover {
+    color: white;
+  }
+  
+  .subscribe-section #icon {
+    color: rgb(153, 154, 154);
+    font-size: 25px;
+    position: relative;
+    top: 6px;
+  }
+  
+  .subscribe-section a {
+    text-decoration: none;
+  }
+  
+  .subscribe-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(153, 154, 154);
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .footer-columns {
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    justify-content: start;
+    height: 68%;
+    gap: 6%;
+    padding: 15px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+    color: rgb(154, 153, 152);
+    font-size: 25px;
+    align-items: center;
+    padding-bottom: 8px;
+  }
+  
+  .social-icons i:hover {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .social-icons i {
+    margin-right: 15px;
+  }
+  
+  #globe {
+    border-radius: 5px;
+  }
+  .social-icons span {
+    color: rgb(153, 154, 154);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  #icon-text span:hover {
+    color: white;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .column h5 {
+    margin-bottom: 10px;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 25px;
+  }
+  
+  .column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .column ul li a {
+    text-decoration: none;
+    color: rgb(153, 154, 154);
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .column ul li a:hover {
+    color: white;
+  }
+  
+  .legal-section {
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    text-align: center;
+    padding-top: 3%;
+    position: relative;
+    right: 6px;
+  }
+  
+  .legal-section a,
+  span {
+    color: rgb(153, 154, 154);
+    text-decoration: none;
+    font-size: 10px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .legal-section a:hover {
+    color: white;
+  }
+  
+  .copyright {
+    margin-top: 3%;
+    text-align: end;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: rgb(153, 154, 154);
+  }
+
+
+
+
+
+
+  
+
+/* Header container */
+.header-container {
+  display: flex;
+  height: 13vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #27272a;
+}
+
+/* Left section of header */
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-left: 96px;
+}
+
+/* Logo */
+.logo {
+  width: 48px;
+  height: 48px;
+}
+
+#search-icon {
+  font-size: medium;
+}
+
+/* Navigation list */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  color: rgb(194, 203, 200);
+}
+
+.nav-list button:hover {
+  color: white;
+}
+
+.nav-list button {
+  background: none;
+  border: none;
+  color: rgb(194, 203, 200);
+  cursor: pointer;
+  font-size: small;
+  letter-spacing: 2px;
+}
+
+.nav-list h5 {
+  margin: 0;
+}
+
+/* Right section of header */
+.header-right {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  padding-right: 96px;
+}
+
+/* Dealer search items */
+.dealer-search {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.dealer-search button {
+  background: none;
+  border: none;
+  color: rgb(148, 148, 141);
+  cursor: pointer;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.zip-code {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.zip-code pre {
+  font-size: 10px;
+  color: rgb(148, 148, 141);
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.zip-code .material-symbols-outlined {
+  color: rgb(148, 148, 141);
+}
+
+.material-symbols-outlined {
+  position: relative;
+  top: 2px;
+  right: 8px;
+}
+
+.dealer-search button:hover {
+  color: white;
+}
+
+.dealer-search a,
+pre:hover {
+  color: white;
+}
+
+.material-symbols-outlined:hover {
+  color: white;
+}
+  
