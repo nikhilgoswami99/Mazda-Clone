@@ -1,0 +1,381 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Header container */
+.header-container {
+    display: flex;
+    height: 13vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #27272a;
+  }
+  
+  /* Left section of header */
+  .header-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-left: 96px;
+  }
+  
+  /* Logo */
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+  
+  #search-icon {
+    font-size: medium;
+  }
+  
+  /* Navigation list */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    color: rgb(194, 203, 200);
+  }
+  
+  .nav-list button:hover {
+    color: white;
+  }
+  
+  .nav-list button {
+    background: none;
+    border: none;
+    color: rgb(194, 203, 200);
+    cursor: pointer;
+    font-size: small;
+    letter-spacing: 2px;
+  }
+  
+  .nav-list h5 {
+    margin: 0;
+  }
+  
+  /* Right section of header */
+  .header-right {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    padding-right: 96px;
+  }
+  
+  /* Dealer search items */
+  .dealer-search {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .dealer-search button {
+    background: none;
+    border: none;
+    color: rgb(148, 148, 141);
+    cursor: pointer;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .zip-code {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .zip-code pre {
+    font-size: 10px;
+    color: rgb(148, 148, 141);
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  
+  .zip-code .material-symbols-outlined {
+    color: rgb(148, 148, 141);
+  }
+  
+  .material-symbols-outlined {
+    position: relative;
+    top: 2px;
+    right: 8px;
+  }
+  
+  .dealer-search button:hover {
+    color: white;
+  }
+  
+  .dealer-search a,
+  pre:hover {
+    color: white;
+  }
+  
+  .material-symbols-outlined:hover {
+    color: white;
+  }
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: #E6E6E6;
+    border-bottom: 1px solid #dcdcdc; /* Light border for the navbar */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Left Side (Start Over) */
+.navbar-left .start-over {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left .start-over span {
+    margin-right: 10px; /* Space between arrow and text */
+}
+
+.navbar-left .start-over:hover {
+    text-decoration: underline;
+}
+
+/* Right Side (Button) */
+.navbar-right .compare-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4a627c; /* Color for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar-right .compare-btn:hover {
+    background-color: #3c5167; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Stack the navbar content vertically on smaller screens */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar-right .compare-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Make font sizes smaller for very small screens */
+    .navbar-left .start-over,
+    .navbar-right .compare-btn {
+        font-size: 14px;
+    }
+
+    .navbar-right .compare-btn {
+        padding: 8px 15px;
+    }
+}
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E6E6E6;
+    padding: 20px;
+}
+
+/* Header Styling */
+.main-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-header h1 {
+    font-size: 36px;
+    color: #111;
+}
+
+.main-header h2 {
+    font-size: 24px;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Car Packages Section */
+.packages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.package {
+    background-color: #E6E6E6;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: filter 0.3s;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+.package:hover ~ .package{
+    filter: blur(4px);
+    pointer-events: none;
+}
+.package:hover{
+    filter: none;
+    pointer-events: auto;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.package h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.package img {
+    width: 100%;
+    height:100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.specs {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.specs div {
+    text-align: center;
+}
+
+.specs p {
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.build-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.build-btn:hover {
+    background-color: #333;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .package {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .package {
+        width: 100%;
+    }
+}
+/* Footer Styling */
+.footer {
+    background-color: #2d2d2d; /* Dark background color */
+    color: #b5b5b5; /* Light text color */
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    border-top: 1px solid #3e3e3e; /* Border at the top of footer */
+}
+
+/* Footer Links Styling */
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #b5b5b5;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright and Accessibility Styling */
+.footer-copyright {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top: 1px solid #3e3e3e;
+    padding-top: 10px;
+    margin-left: 23.2%;
+}
+
+.footer-accessibility {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    font-size: 14px;
+    margin-left: 22%;
+}
+
+/* Accessibility Icon (Placeholder) */
+.accessibility-icon {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #888; /* Placeholder color for the icon */
+    margin-right: 5px;
+}
+
+.footer-accessibility span {
+    display: flex;
+    align-items: center;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .footer-copyright {
+        flex-direction: column;
+    }
+}
