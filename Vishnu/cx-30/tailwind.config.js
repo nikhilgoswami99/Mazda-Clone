@@ -6,6 +6,9 @@ module.exports = {
       height:{
         vh:["485px"],
       },
+      colors: {
+        customGray: '#2b2b2b',
+      },
 
 
 
