@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -19,14 +20,89 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
     <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>View Inventory</title>
   </head>
 
   <body>
     <header>
-      <div class="container">
-        <div class="summary">
+      <div class="header-container">
+        <div class="header-left">
+          <div>
+            <a href="#">
+              <img class="logo" src="../Assets/img1.jpg" alt="Mazda Logo" />
+            </a>
+          </div>
+
+          <nav>
+            <ul class="nav-list">
+              <li>
+                <a href="#"><button>VEHICLES</button></a>
+              </li>
+              <li>
+                <a href="#"><button>SHOPPING TOOLS</button></a>
+              </li>
+              <li>
+                <a href="#"><button>WHAT DRIVES US</button></a>
+              </li>
+              <li>
+                <a target="_self" href="../owners/index.html"
+                  ><button>OWNERS</button></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><button>
+                    <i
+                      id="search-icon"
+                      class="fa-solid fa-magnifying-glass fa-shake"
+                    ></i></button
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header-right">
+          <ul class="dealer-search">
+            <li>
+              <a href="#"><button>FIND A DEALER</button></a>
+            </li>
+            <li>
+              <a href="#"><button>|</button></a>
+            </li>
+            <li class="zip-code">
+              <pre>96799</pre>
+              <a href="#"
+                ><button>
+                  <i class="fa-solid fa-location-dot fa-beat"></i></button
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <header class="header1">
+      <div class="container1">
+        <div class="summary1">
           <span class="dealer_count">SEARCHING 1 DEALER</span>
           <span class="vehicle_count">0 VEHICLES FOUND</span>
           <span class="zip">Near <u>96799</u></span>
@@ -50,7 +126,7 @@
           </div>
 
           <div class="zip_map">
-            <span>ZIP CODE</span><span id="map">MAP</span>
+            <span class="zipcode">ZIP CODE</span><span id="map">MAP</span>
           </div>
           <hr />
           <div class="option_zip">
@@ -65,8 +141,9 @@
 
             <div class="zip_search">
               <input
+                id="input"
                 type="text"
-                placeholder="ZIP CODE"
+                placeholder="96799"
                 name="zip"
                 maxlength="5"
                 pattern="\d{5}"
@@ -82,7 +159,9 @@
             <span class="material-symbols-outlined"> keyboard_arrow_down </span>
           </div>
           <p>We couldn't find any MAZDA Dealers near you.</p>
+          <br />
           <p><b>Search Suggestions</b></p>
+          <br />
           <p>
             Adjust your search filters. <br />
             Try changing selected accolades.<br />
@@ -90,13 +169,107 @@
           </p>
         </div>
         <hr />
+        <br />
 
         <div class="sidebar_model">
-          <div class="model">
-            MODEL
-            <span class="material-symbols-outlined"> remove </span>
+          <div class="models">
+            <div class="model">
+              MODEL
+              <span class="material-symbols-outlined"> remove </span>
+            </div>
+            <div class="filters1">Select Model(s)</div>
+            <div class="single_model2">
+              <input type="checkbox" id="v1" name="v1" value="v1" />
+              <label for="v1">MAZDA3 SEDAN</label>
+              <div class="img">
+                <img
+                  src="https://www.mazdausa.com/syssiteassets/vehicles/2025/mazda3-sedan/06_global-nav-profile/2025-m3-sedan-turbo-premium-plus-polymetal-gray-profile.png?w=180"
+                />
+              </div>
+            </div>
+
+            <div class="single_model">
+              <input type="checkbox" id="v1" name="v1" value="v1" />
+              <label for="v1">MAZDA CX-30</label>
+              <div class="img">
+                <img
+                  src="https://www.mazdausa.com/syssiteassets/vehicles/2025/cx-30/04_btv/001_trims/profile-jellies/2025-cx30-turbo-premium-plus-polymetal-gray-profile-2.png?w=180"
+                />
+              </div>
+            </div>
+            <div class="single_model">
+              <input type="checkbox" id="v1" name="v1" value="v1" />
+              <label for="v1">MAZDA CX-90</label>
+              <div class="img">
+                <img
+                  src="https://www.mazdausa.com/syssiteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-phev/001_trims/profile/2025-cx90-phev-premiumplus-rhodiumwhite-profile_v2.png?w=180"
+                />
+              </div>
+            </div>
+            <div class="single_model">
+              <input type="checkbox" id="v1" name="v1" value="v1" />
+              <label for="v1">MAZDA CX-50</label>
+              <div class="img">
+                <img
+                  src="https://www.mazdausa.com/syssiteassets/vehicles/2025/cx-90--cx-90-phev/06_btv/cx-90-inline/001_trims/profile-jellies/2025-cx90-inline-turbospremiumplus-artisanred-profile.png?w=180"
+                />
+              </div>
+            </div>
+            <div class="single_model">
+              <input type="checkbox" id="v1" name="v1" value="v1" />
+              <label for="v1">MAZDA CX-5</label>
+              <div class="img">
+                <img
+                  src="https://www.mazdausa.com/syssiteassets/vehicles/2025/cx-50/08_btv/profile-jelly/2023-mazda-cx-50-2-5-turbo-premium-plus-profile.png?w=180"
+                />
+              </div>
+            </div>
+            <div class="single_model1">
+              <input type="checkbox" id="v1" name="v1" value="v1" />
+              <label for="v1">MAZDA CX-70 PHEV</label>
+              <div class="img1">
+                <img
+                  src="https://www.mazdausa.com/syssiteassets/vehicles/2025/cx-5/05_btv/001_trims/profile/2024-cx5-turbosignature-machinegray.png?w=180"
+                />
+              </div>
+            </div>
+            <div class="single_model">
+              <input type="checkbox" id="v1" name="v1" value="v1" />
+              <label for="v1">MAZDA CX-70</label>
+              <div class="img">
+                <img
+                  src="https://www.mazdausa.com/syssiteassets/vehicles/2025/cx-70-phev/04_btv/001_trims/profile/2025-cx70-phev-premium-plus-profile_v2.png?w=180"
+                />
+              </div>
+            </div>
+            <div class="single_model1">
+              <input type="checkbox" id="v1" name="v1" value="v1" />
+              <label for="v1">MAZDA3 HATCHBACK</label>
+              <div class="img1">
+                <img
+                  src="https://www.mazdausa.com/syssiteassets/vehicles/2025/cx-70/04_btv/001_trims/profile/2025-cx-70-profile.png?w=180"
+                />
+              </div>
+            </div>
+            <div class="single_model1">
+              <input type="checkbox" id="v1" name="v1" value="v1" />
+              <label for="v1">MAZDAMX-5 MIATA RF</label>
+              <div class="img1">
+                <img
+                  src="https://www.mazdausa.com/syssiteassets/vehicles/2024/mx-5-rf/build-and-price/trims/profile/2024-mx-5-rf-gt-soulred-profile.png?w=180"
+                />
+              </div>
+            </div>
+            <div class="single_model">
+              <input type="checkbox" id="v1" name="v1" value="v1" />
+              <label for="v1">MAZDA MX-5</label>
+              <div class="img">
+                <img
+                  src="https://www.mazdausa.com/syssiteassets/vehicles/2024/mx-5-st/profile-jellies/2024-mx-5-touring-profile.png?w=180"
+                />
+              </div>
+            </div>
           </div>
-          <div class="filters">Select Model(s)</div>
           <hr />
         </div>
         <div class="sidebar_model">
@@ -105,7 +278,7 @@
               VEHICLE STATUS
               <span class="material-symbols-outlined"> add </span>
             </div>
-            <div class="filters">All</div>
+            <div class="filters1">All</div>
             <hr />
           </div>
           <div class="sidebar_model">
@@ -113,23 +286,40 @@
               COLOR
               <span class="material-symbols-outlined"> add </span>
             </div>
-            <div class="filters">All</div>
+            <div class="filters1">All</div>
             <hr />
           </div>
           <div class="sidebar_model">
-            <div class="model">
-              PRICE
-              <span class="material-symbols-outlined"> add </span>
+            <div class="model_price">PRICE</div>
+            <div class="filters_model">
+              Select Minimum Price and Maximum Price
             </div>
-            <div class="filters">All</div>
+            <div class="min_max">
+              <div class="min">Min:$0</div>
+              <div class="max">Max:$0</div>
+            </div>
+            <div class="range">
+              <label for="range1"></label>
+              <input
+                type="range"
+                id="range1"
+                name="range1"
+                min="0"
+                max="50"
+                class="accent"
+                value="0"
+              />
+            </div>
+            <br />
             <hr />
+            <br />
           </div>
           <div class="sidebar_model">
             <div class="model">
               POWERTRAIN
               <span class="material-symbols-outlined"> add </span>
             </div>
-            <div class="filters">All</div>
+            <div class="filters1">All</div>
             <hr />
           </div>
         </div>
@@ -137,9 +327,135 @@
           YEAR
           <span class="material-symbols-outlined"> add </span>
         </div>
-        <div class="filters">All</div>
+        <div class="filters1">All</div>
         <hr />
+        <div class="clear">
+          <span class="material-symbols-outlined"> close </span>CLEAR ALL
+        </div>
+      </div>
+      <div class="main_page">
+        <div class="main_bar">
+          <div class="icon">
+            <span class="material-symbols-outlined"> window </span>
+            <span>|</span
+            ><span class="material-symbols-outlined"> table_rows </span>
+          </div>
+          <div class="sort">
+            <span class="sort_by">SORT BY</span>
+            <select>
+              <option class="sortby">DISTANCE : NEAR TO FAR</option>
+              <option class="sortby">DISTANCE : FAR TO NEAR</option>
+              <option class="sortby">PRICE : LOW TO HIGH</option>
+              <option class="sortby">PRICE : HIGH TO LOW</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="content">0 results found</div>
+        <hr />
+        <br />
+        <div class="main_content">
+          <section>Suggestions for refining your search</section>
+          <br />
+          <span
+            >Expand your search radius. Try searching for additional colors. Try
+            searching for additional trims.</span
+          >
+        </div>
       </div>
     </div>
+    <footer class="footer1">
+      <span class="h1">CAN'T FIND WHAT YOU'RE LOOKING FOR?</span>
+      <span class="h2"> YOUR MAZDA RETAILER CAN HELP.</span>
+      <button class="btn">CONTACT A DEALER</button>
+    </footer>
+    <footer class="footer2">
+      <section class="footer-section">
+        <div class="subscribe-section">
+          <a href="#">
+            <i id="icon" class="fa-solid fa-envelope fa-flip"></i>
+            <span class="subscribe-text">SUBSCRIBE TO UPDATES</span>
+          </a>
+        </div>
+        <div class="footer-columns">
+          <div class="column">
+            <h5>Shopping Tools</h5>
+            <ul>
+              <li><a href="#">BUILD AND PRICE</a></li>
+              <li><a href="#">INVENTORY SEARCH</a></li>
+              <li><a href="#">CERTIFIED PRE-OWNED</a></li>
+              <li><a href="#">REQUEST A QUOTE</a></li>
+              <li><a href="#">SPECIAL OFFERS</a></li>
+              <li><a href="#">Payment Estimator</a></li>
+              <li><a href="#">APPLY FOR FINANCING</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h5>Other Mazda Sites</h5>
+            <ul>
+              <li><a href="#">MAZDA GLOBAL</a></li>
+              <li><a href="#">Mazda Foundation</a></li>
+              <li><a href="#">MOTORSPORTS</a></li>
+              <li><a href="#">MAZDA RECALL INFO</a></li>
+              <li><a href="#">Mazda Stories</a></li>
+              <li><a href="#">MAZDA FINANCIAL SERVICES</a></li>
+              <li><a href="#">MAZDA PROTECTION PRODUCTS</a></li>
+              <li><a href="#">MAZDA COLLECTION</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h5>About</h5>
+            <ul>
+              <li><a href="#">MAZDA NEWS</a></li>
+              <li><a href="#">CAREERS</a></li>
+              <li><a href="#">MAZDA MOBILE APPS</a></li>
+              <li><a href="#">ESG & SUSTAINABILITY</a></li>
+              <li><a href="#">RESOURCE CENTER</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h5>Help</h5>
+            <ul>
+              <li><a href="#">ACCESSIBILITY</a></li>
+              <li><a href="#">SITEMAP</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li><a href="#">DEALER DIRECTORY</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-icons">
+          <div>
+            <i class="fa-brands fa-facebook-f fa-bounce"></i>
+            <i class="fa-brands fa-youtube fa-bounce"></i>
+            <i class="fa-brands fa-x-twitter fa-bounce"></i>
+            <i class="fa-brands fa-square-instagram fa-bounce"></i>
+            <i class="fa-brands fa-threads fa-bounce"></i>
+          </div>
+          <div id="icon-text">
+            <i class="fa-solid fa-universal-access fa-bounce"></i
+            ><span>ACCESSIBILITY</span>
+            <i class="fa-solid fa-globe fa-bounce"></i><span>ENGLISH</span>
+          </div>
+        </div>
+
+        <div class="legal-section">
+          <a href="#">Terms and Conditions</a>
+          <span>|</span>
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Manage Cookie Preferences</a>
+          <span>|</span>
+          <a href="#">Do not sell or share my personal information</a>
+        </div>
+
+        <div class="copyright">
+          <p>©2024 MAZDA NORTH AMERICAN OPERATIONS. ALL RIGHTS RESERVED.</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
